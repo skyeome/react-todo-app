@@ -19,7 +19,7 @@ function ToDoList() {
   const [category, setCategory] = useRecoilState<Categories>(categoryState);
   const [categoryList, setCategoryList] = useRecoilState(categoryListState);
   const { register, handleSubmit, setValue } = useForm<ICategory>();
-  const local = localStorage.getItem("toDoState");
+  const local = localStorage.getItem("toDosState");
   const localCategory = localStorage.getItem("categoryList");
   const slct = useRef<HTMLSelectElement>(null);
   useEffect(() => {

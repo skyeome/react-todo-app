@@ -13,7 +13,7 @@ function CreateToDo() {
   const handleValid = ({ toDo }: IForm) => {
     setToDos((oldToDos) => {
       localStorage.setItem(
-        "toDoState",
+        "toDosState",
         JSON.stringify([{ text: toDo, id: Date.now(), category }, ...oldToDos])
       );
       return [{ text: toDo, id: Date.now(), category }, ...oldToDos];
